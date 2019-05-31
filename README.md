@@ -40,7 +40,7 @@ npm install oaf-reach-router
 + import { globalHistory } from "@reach/router";
 + import { wrapHistory } from "oaf-reach-router";
 
-+ wrapHistory(history);
++ wrapHistory(globalHistory);
 
 ...
 ```
