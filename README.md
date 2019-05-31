@@ -10,7 +10,7 @@
 
 # Oaf Reach Router
 
-An accessible wrapper for [Reach Router](https://reach.tech/router/accessibility).
+An accessible wrapper for [Reach Router](https://github.com/reach/router).
 
 Documentation at https://oaf-project.github.io/oaf-reach-router/
 
@@ -95,6 +95,7 @@ Note that [Bootstrap 4 unfortunately removes these focus outlines](https://githu
 All that said, if you absolutely _must_ remove focus outlines (stubborn client, stubborn boss, stubborn designer, whatever), consider using the [`:focus-visible` polyfill](https://github.com/WICG/focus-visible) so focus outlines are only hidden from mouse users, _not_ keyboard users.
 
 ## See also
+* [Reach Router Accessibility](https://reach.tech/router/accessibility)
 * [Oaf Routing](https://github.com/oaf-project/oaf-routing)
 * [Oaf Side Effects](https://github.com/oaf-project/oaf-side-effects)
 * [React-axe](https://github.com/dequelabs/react-axe)
