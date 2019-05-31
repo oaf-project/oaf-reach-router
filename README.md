@@ -8,7 +8,7 @@
 [![devDependencies Status](https://david-dm.org/oaf-project/oaf-reach-router/dev-status.svg)](https://david-dm.org/oaf-project/oaf-reach-router?type=dev)
 [![peerDependencies Status](https://david-dm.org/oaf-project/oaf-reach-router/peer-status.svg)](https://david-dm.org/oaf-project/oaf-reach-router?type=peer)
 
-# Oaf React Router
+# Oaf Reach Router
 
 An accessible wrapper for [Reach Router](https://reach.tech/router/accessibility).
 
@@ -75,7 +75,7 @@ wrapHistory(history, settings);
 ```
 
 ### A note on focus outlines
-You may see focus outlines around your `h1` elements (or elsewhere, per `primaryFocusTarget`) when using Oaf React Router.
+You may see focus outlines around your `h1` elements (or elsewhere, per `primaryFocusTarget`) when using Oaf Reach Router.
 
 You might be tempted to remove these focus outlines with something like the following:
 ```css
