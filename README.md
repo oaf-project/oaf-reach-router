@@ -48,8 +48,6 @@ npm install oaf-reach-router
 ## Advanced Usage
 
 ```typescript
-const history = createBrowserHistory();
-
 const settings = {
   announcementsDivId: "announcements",
   primaryFocusTarget: "main h1, [role=main] h1",
@@ -71,7 +69,7 @@ const settings = {
   smoothScroll: false,
 };
 
-wrapHistory(history, settings);
+wrapHistory(globalHistory, settings);
 ```
 
 ### A note on focus outlines
