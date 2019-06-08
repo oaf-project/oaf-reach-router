@@ -12,7 +12,6 @@ export { RouterSettings } from "oaf-routing";
 
 export const defaultSettings: RouterSettings<HistoryLocation> = {
   ...oafRoutingDefaultSettings,
-  repairFocus: false, // Reach Router handles focus itself, so we let it do its thing by default.
 };
 
 // HACK we need a way to track where focus and scroll were left on the first loaded page
