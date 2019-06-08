@@ -70,8 +70,8 @@
 				<p><a href="https://david-dm.org/oaf-project/oaf-reach-router"><img src="https://david-dm.org/oaf-project/oaf-reach-router/status.svg" alt="dependencies Status"></a>
 					<a href="https://david-dm.org/oaf-project/oaf-reach-router?type=dev"><img src="https://david-dm.org/oaf-project/oaf-reach-router/dev-status.svg" alt="devDependencies Status"></a>
 				<a href="https://david-dm.org/oaf-project/oaf-reach-router?type=peer"><img src="https://david-dm.org/oaf-project/oaf-reach-router/peer-status.svg" alt="peerDependencies Status"></a></p>
-				<h1 id="oaf-react-router">Oaf React Router</h1>
-				<p>An accessible wrapper for <a href="https://reach.tech/router/accessibility">Reach Router</a>.</p>
+				<h1 id="oaf-reach-router">Oaf Reach Router</h1>
+				<p>An accessible wrapper for <a href="https://github.com/reach/router">Reach Router</a>.</p>
 				<p>Documentation at <a href="https://oaf-project.github.io/oaf-reach-router/">https://oaf-project.github.io/oaf-reach-router/</a></p>
 				<h2 id="features">Features</h2>
 				<ul>
@@ -92,13 +92,11 @@ npm install oaf-reach-router</code></pre>
 				<pre><code class="language-diff"><span class="hljs-addition">+ import { globalHistory } from "@reach/router";</span>
 <span class="hljs-addition">+ import { wrapHistory } from "oaf-reach-router";</span>
 
-<span class="hljs-addition">+ wrapHistory(history);</span>
+<span class="hljs-addition">+ wrapHistory(globalHistory);</span>
 
 ...</code></pre>
 				<h2 id="advanced-usage">Advanced Usage</h2>
-				<pre><code class="language-typescript"><span class="hljs-keyword">const</span> history = createBrowserHistory();
-
-<span class="hljs-keyword">const</span> settings = {
+				<pre><code class="language-typescript"><span class="hljs-keyword">const</span> settings = {
   announcementsDivId: <span class="hljs-string">"announcements"</span>,
   primaryFocusTarget: <span class="hljs-string">"main h1, [role=main] h1"</span>,
   <span class="hljs-comment">// This assumes you're setting the document title via some other means (e.g. React Helmet).</span>
@@ -119,9 +117,9 @@ npm install oaf-reach-router</code></pre>
   smoothScroll: <span class="hljs-literal">false</span>,
 };
 
-wrapHistory(history, settings);</code></pre>
+wrapHistory(globalHistory, settings);</code></pre>
 				<h3 id="a-note-on-focus-outlines">A note on focus outlines</h3>
-				<p>You may see focus outlines around your <code>h1</code> elements (or elsewhere, per <code>primaryFocusTarget</code>) when using Oaf React Router.</p>
+				<p>You may see focus outlines around your <code>h1</code> elements (or elsewhere, per <code>primaryFocusTarget</code>) when using Oaf Reach Router.</p>
 				<p>You might be tempted to remove these focus outlines with something like the following:</p>
 				<pre><code class="language-css"><span class="hljs-selector-attr">[tabindex="-1"]</span><span class="hljs-selector-pseudo">:focus</span> {
   <span class="hljs-attribute">outline</span>: <span class="hljs-number">0</span> <span class="hljs-meta">!important</span>;
@@ -136,6 +134,7 @@ wrapHistory(history, settings);</code></pre>
 				<p>All that said, if you absolutely <em>must</em> remove focus outlines (stubborn client, stubborn boss, stubborn designer, whatever), consider using the <a href="https://github.com/WICG/focus-visible"><code>:focus-visible</code> polyfill</a> so focus outlines are only hidden from mouse users, <em>not</em> keyboard users.</p>
 				<h2 id="see-also">See also</h2>
 				<ul>
+					<li><a href="https://reach.tech/router/accessibility">Reach Router Accessibility</a></li>
 					<li><a href="https://github.com/oaf-project/oaf-routing">Oaf Routing</a></li>
 					<li><a href="https://github.com/oaf-project/oaf-side-effects">Oaf Side Effects</a></li>
 					<li><a href="https://github.com/dequelabs/react-axe">React-axe</a></li>
