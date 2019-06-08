@@ -36,6 +36,17 @@ npm install oaf-reach-router
 
 ## Basic Usage
 
+First, disable Reach Router's native focus management by setting `primary` to `false`:
+
+```html
+# See https://reach.tech/router/api/Router
+<Router primary={false}>
+  ...
+</Router>
+```
+
+Then wrap the global history using Oaf Reach Router:
+
 ```diff
 + import { globalHistory } from "@reach/router";
 + import { wrapHistory } from "oaf-reach-router";
