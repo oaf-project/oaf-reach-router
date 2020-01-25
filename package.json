@@ -20,7 +20,7 @@
     "typescript": "^3.5.1"
   },
   "dependencies": {
-    "oaf-routing": "^3.0.0"
+    "oaf-routing": "^4.0.0"
   },
   "scripts": {
     "build": "tsc",
